@@ -1,0 +1,93 @@
+.header_box{
+    height: 100px;
+    width: 1200px;
+    border: solid 0px black;
+    margin: auto;
+
+}
+.menu_box{
+    height: 100px;
+    width: 995px;
+    border: solid 0px rgb(233, 157, 157);
+    float: left;
+}
+.logo_box{
+    height: 100px;
+    width: 200px;
+    border: solid 0px black;
+    float: left;
+    text-align: center;
+
+}
+
+.menu_item_box{
+    list-style: none;
+}
+.menu_item{
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 0px rgb(243, 77, 77);
+    float: left;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    margin: 7px;
+    background-color: rgb(243, 156, 156);
+    color: rgb(9, 25, 29);
+    border-radius: 20px;
+}
+.header_border{
+    width: 1200px;
+}
+
+/*Contact Us*/
+
+.outer_form{
+    border: solid 1px balck;
+    margin: auto;
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.inner_row{
+    border: solid 0px black;
+}
+.form_item{
+    border: solid 0px black;
+
+}
+lable{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: left;
+
+}
+.form_input{
+    border-radius: 30px;
+    padding: 7px;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form_button{
+    border-radius: 30px;
+    padding: 7px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map_box{
+    height: 500px;
+    width: 700px;
+    border: solid 1px black;
+    float: left;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
