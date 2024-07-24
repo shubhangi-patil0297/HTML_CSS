@@ -1,0 +1,24 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.activeBtn{
+    padding: 20px;
+    background-color: #af4646;
+    border:none;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    box-shadow: 5px 5px 1px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+.activeBtn:hover{
+    cursor: pointer;
+}
+.activeBtn:active{
+    box-shadow: none;
+    transition: all 0.5;
+}
