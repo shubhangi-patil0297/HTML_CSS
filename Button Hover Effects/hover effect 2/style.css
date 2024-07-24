@@ -1,0 +1,109 @@
+
+body {  
+  height: 100vh;  
+  background-color:#c5eff5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.button_container {
+    margin-top: 100px;
+  }
+
+.description{  
+  font-size: 35px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.btn{  
+  background-color: #222;
+  border:none;
+  outline: none;    
+  cursor: pointer;
+  text-transform: uppercase;  
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 17px 60px;
+  box-shadow: 4px 5px 15px rgba(0,0,0,0.20);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+.btn::after{
+  box-sizing: border-box;
+  content: "";  
+  width: 0;  
+  height: 0;  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  border:4px solid transparent;
+  border-top: transparent;
+  border-right: transparent;  
+}
+.btn:hover::after{
+  animation-name: animate_after;
+  animation-duration: 1s;
+  animation-timing-function:linear;  
+  animation-fill-mode:forwards;
+}
+.btn::before{
+  box-sizing: border-box;
+  content: "";  
+  width: 0;  
+  height: 0;  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border:4px solid transparent;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+.btn:hover::before{
+  animation-name: animate_before;
+  animation-duration: 1s;
+  animation-timing-function:linear;  
+  animation-fill-mode:forwards;
+  animation-delay: 1s;
+}
+@keyframes animate_after {
+  0%{
+    width:0;
+    height:0;
+    border-color: #4f888f;    
+  }
+  50%{
+    width: 0;
+    height: 100%;
+    border-color: #4f888f;    
+  }
+  100%{    
+    height:100%;
+    width:100%;
+    border-color:#4f888f ;    
+  }
+}
+@keyframes animate_before {
+  0% {
+    width: 0;
+    height: 0;
+    border-color:#4f888f ;    
+}
+
+50% {
+    width: 0;
+    height: 100%;
+    border-color:#4f888f ;        
+}
+
+100% {
+    width: 100%;
+    height: 100%;
+    border-color:#4f888f ;        
+}
+}
