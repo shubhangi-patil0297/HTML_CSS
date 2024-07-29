@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;    
+    min-height: 100vh;
+  }
+  
+  .typing{
+    color: rgb(37, 60, 178);
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 2.6rem;
+    width: 0;
+    animation: typing 4s steps(13, end) infinite forwards;
+  }
+  @keyframes typing {
+    0%{      
+      width: 0;
+    }
+    60%{
+      width: 100%;
+    }     
+  }
+  
